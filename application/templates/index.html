@@ -1,1 +1,53 @@
-<h1>Hello world</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jacob Andrew Cohen</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport", content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+        <!--link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" -->
+
+
+    </head>
+
+<style>
+    img {
+        width:70%;
+        border-radius:60%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .row {
+        display:flex;
+    }
+    .column {
+        float:left;
+        padding:10px;
+    }
+    .left {
+        width:30%;
+        text-align:center;
+    }
+    .right {
+        width:70%;
+    }
+</style>
+
+
+<body>
+    <div class="row">
+        <div class="column left">
+            {% include "includes/l-col.html" %}
+        </div>
+        <div class="column right" style="background-color:#bbb;">
+            {% include "includes/r-col.html" %}
+        </div>
+    </div>
+
+    {% include "includes/footer.html" %}
+    {% include "includes/nav.html" %}
+</body>
+
+</html>
