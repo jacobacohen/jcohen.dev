@@ -1,11 +1,17 @@
 from application import app
-from flask import render_template
+from flask import render_template, request
 
-@app.route("/")
-@app.route("/home.html")
-@app.route("/index.html")
+@app.route("/home.html", methods=['GET'])
+@app.route("/index.html", methods=['GET'])
+@app.route("/", methods=['GET'])
 def index():
-    return render_template("index.html", index=True)
+    platform = request.user_agent.platform
+    mobile = ["android", "blackberry", "iphone"]
+    if (platform in mobile):
+        return render_template("index.html", mobile=True, index=True)
+    else:
+        return render_template("index.html", mobile=False, index=True)
+        
 
 @app.route("/other.html")
 def other():

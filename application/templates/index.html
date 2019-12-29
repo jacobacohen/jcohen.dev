@@ -37,6 +37,11 @@
 
 
 <body>
+    {% if mobile %}
+            {% include "includes/l-col.html" %}
+            {% include "includes/links.html" %}
+            {% include "includes/r-col.html" %}
+    {% else %}
     <div class="row">
         <div class="column left">
             {% include "includes/l-col.html" %}
@@ -47,9 +52,8 @@
             {% include "includes/r-col.html" %}
         </div>
     </div>
+    {% endif %}
 
-    {% include "includes/footer.html" %}
-    {% include "includes/nav.html" %}
 </body>
 
 </html>

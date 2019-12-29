@@ -128,7 +128,7 @@
 		}
 
 		a:hover {
-			color: #ff7496;
+			color: #ffffff;
 		}
 
 	strong, b {
@@ -209,9 +209,12 @@
 /* Icon */
 
 	.icon {
+                cursor: default;
 		text-decoration: none;
 		position: relative;
 		border-bottom: none;
+                margin-top: -0.674em;
+                display: inline-block;
 	}
 
 		.icon:before {
@@ -276,6 +279,9 @@
 				padding: 0.675em 0.5em;
 			}
 
+                        ul.icons li:hover {
+                            color=#000000
+                        }
 				ul.icons li a {
 					text-decoration: none;
 					position: relative;
@@ -284,9 +290,8 @@
 					height: 3.75em;
 					border-radius: 100%;
 					/*border: solid 1px #c8cccf;*/
-					border: solid 1px #ffffff;
+					border: solid 1px #000000;
 					line-height: 3.75em;
-					overflow: hidden;
 					text-align: center;
 					text-indent: 3.75em;
 					white-space: nowrap;
@@ -301,15 +306,15 @@
 						text-transform: none !important;
 					}
 
-                                        /* TODO: Change icon colors on/before hover */
+                                        /* Icon color change area */
 					ul.icons li a:before {
-						color: #ffffff;
-						text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+						color: #000000;
+						/*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;*/
 					}
 
-					ul.icons li a:hover:before {
+					/*ul.icons li a:hover:before {
 						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
-					}
+					}*/
 
 					ul.icons li a:before {
 						position: absolute;
@@ -325,7 +330,8 @@
 
 					ul.icons li a:hover {
 						/*border-color: #ff7496;*/
-						border-color: #ff7496;
+                                                color: #ffffff;
+						border-color: #ffffff;
 					}
 
 			@media screen and (max-width: 480px) {
@@ -365,3 +371,6 @@
 			margin-left: 1.5em;
 		}
 
+.fa-linkedin:hover {
+    color: #000000;
+}
