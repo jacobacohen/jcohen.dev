@@ -37,9 +37,10 @@
 
 
 <body>
+    {% block content %}
     {% if mobile %}
-            {% include "includes/l-col.html" %}
-            {% include "includes/links.html" %}
+            {% include "includes/l-col-mobile.html" %}
+            {% include "includes/links-mobile.html" %}
             {% include "includes/r-col.html" %}
             {% include "includes/extras.html" %}
     {% else %}
@@ -56,6 +57,7 @@
     </div>
     {% endif %}
     {% include "includes/footer.html" %}
+    {% endblock content %}
 
 </body>
 

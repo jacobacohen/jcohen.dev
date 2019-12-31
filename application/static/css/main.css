@@ -279,7 +279,7 @@
 			}
 
                         ul.icons li:hover {
-                            color=#000000
+                            color=#000000;
                         }
 				ul.icons li a {
 					text-decoration: none;
@@ -303,17 +303,14 @@
 						font-style: normal;
 						font-weight: normal;
 						text-transform: none !important;
+                                                color:#000000;
 					}
 
                                         /* Icon color change area */
-					ul.icons li a:before {
-						color: #000000;
-						/*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;*/
-					}
-
 					/*ul.icons li a:hover:before {
 						text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
 					}*/
+
 
 					ul.icons li a:before {
 						position: absolute;
@@ -329,7 +326,10 @@
 
 					ul.icons li a:hover {
 						/*border-color: #ff7496;*/
-                                                color: #ffffff;
+						text-shadow: 0.75px 0px 0px #ffffff, -0.75px 0px 0px #ffffff, 0px 0.75px 0px #ffffff, 0px -0.75px 0px #ffffff;
+                                                text-color: #ffffff;
+                                                font-color: #ffffff;
+                                                outline-color: #ffffff;
 						border-color: #ffffff;
 					}
 
