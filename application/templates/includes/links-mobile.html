@@ -1,14 +1,16 @@
 <style>
 div.cent {
-    width:20%;
+    width:50%;
     position:relative;
-    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    white-space:nowrap;
 }
     div.res {
-        left:-10%
+        left:-20%
     }
 </style>
-<div class="cent">
+<div class="cent" style="left:8%;">
     <div class="res">
         <ul class="icons">
             <li><a href="{{ url_for('static', filename='files/JacobCResume.pdf') }}" target="_blank" class="fa-file-text">Resume</a></li>
@@ -17,8 +19,8 @@ div.cent {
 <div class="cent">
     <div class="container-fluid text-right bottom-container">
         <ul class="icons">
-            <li><a href="mailto:jacobac@umd.edu" class="fa-envelope" title="Email"></a></li>
-            <li><a href="https://www.linkedin.com/in/jacobac" class="fa-linkedin" title="LinkedIn"></a></li>
-            <li><a href="https://www.github.com/jacobacohen" class="fa-github" title="Github"></a></li>
+            <li><a href="mailto:jacobac@umd.edu" target="_blank" class="fa-envelope" title="Email"></a></li>
+            <li><a href="https://www.linkedin.com/in/jacobac" target="_blank" class="fa-linkedin" title="LinkedIn"></a></li>
+            <li><a href="https://www.github.com/jacobacohen" target="_blank" class="fa-github" title="Github"></a></li>
     </div>
 </div>
