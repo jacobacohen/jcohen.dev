@@ -77,7 +77,8 @@
 	body {
 		height: 100%;
                 /* webgradients.com */
-                background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+                /* 030 Happy Fisher  and 109 River City mix*/
+                background-image: linear-gradient(120deg, #89f7fe 0%, #04befe 100%);
 		background-position: top left,		center center,		bottom center;
 		background-attachment: fixed,			fixed,				fixed;
 	}
@@ -139,11 +140,13 @@
 	}
 
 	p {
+		color: #313f47;
 		margin: 0 0 1.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		/*color: #313f47;*/
+                color: #000;
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
